@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delver</title>
+  <style>
+    text {text-decoration:none;font-family:"Courier New", Courier, monospace;}
+    body {text-decoration:none;background-image: linear-gradient(darkgrey, grey);}
+    title {text-decoration:none;font-family:"Courier New", Courier, monospace;border-radius: 25px;background: #73AD2175;padding: 20px;;width: 500px;}
+    p {text-decoration:none;font-family:"Courier New", Courier, monospace;border-radius: 25px;background: #73AD2175;padding: 20px;}
+    marquee {text-decoration:none;font-family:"Courier New", Courier, monospace;padding:10px; background: #73AD2175; border-radius:25px; height:20px;}
+    .button {text-decoration:none;font-family:"Courier New", Courier, monospace;padding:10px; background: #73AD2175;border-radius:25px; height:20px;font-size: 30px;}
+    .small_button {text-decoration:none;font-family:"Courier New", Courier, monospace;padding:10px; background: #73AD2175;border-radius:25px; height:5px;font-size: 15px;}
+  </style>
+  <link href="quiz.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/b715dba894.js"></script>
+</head>
+<body>
+  <div id="quizContainer" class="container">
+    <div class="title">Iron Age Quiz</div>
+    <div id="question" class="question"></div>
+    <label class="option"><input type="radio" name="option" value="1" /> <span id="opt1"></span></label>
+    <label class="option"><input type="radio" name="option" value="2" /> <span id="opt2"></span></label>
+    <label class="option"><input type="radio" name="option" value="3" /> <span id="opt3"></span></label>
+    <label class="option"><input type="radio" name="option" value="4" /> <span id="opt4"></span></label>
+    <button id="nextButton" class="next-btn" onclick="loadNextQuestion()">Next Question</button>
+  </div>
+  <div id="result" class="container result" style="display:none;">
+
+  </div>
+  <script src="question3.js"></script>
+  <script src="quiz-script.js"></script>
+  <a href="iron_age.html">Return</a>
+</body>
+</html>
